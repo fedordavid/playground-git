@@ -15,7 +15,8 @@ namespace Pull_Rebase
         
         public string NewName()
         {
-            return _names[new Random().Next(0, _names.Length)] + new Random().Next(_names.Length, 10000 * _names.Length);
+            Console.WriteLine($"{DateTime.Now} {DateTime.Now.Millisecond} ms");
+            return _names[new Random().Next(0, _names.Length)] + new Random().Next(_names.Length, 10000 * _names.Length);           
         }
     }
 }
